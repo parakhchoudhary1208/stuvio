@@ -16,8 +16,9 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body
-                className={`${poppinsSans.variable} antialiased`}
+                className={`${poppinsSans.variable} antialiased`} cz-shortcut-listen="true"
             >
+                
                 {children}
             </body>
         </html>
