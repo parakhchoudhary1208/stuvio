@@ -29,3 +29,8 @@ html,body {
     width: 100%;
     cursor: none;
 }
+
+.clip-path-hidden {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    will-change: clip-path;
+}
