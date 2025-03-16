@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
-const Header = () => {
+const Header = ({ animationController }) => {
     const logoRef = useRef(null);
     const taglineRef = useRef(null);
     const headlineRef = useRef(null);
@@ -78,10 +78,17 @@ const Header = () => {
             duration: 1,
             delay: 0.75,
         });
-    }, []);
+
+        if (animationController) {
+            animationController.headerRefs = {
+                button: buttonRef.current,
+                texts: [logoRef.current, taglineRef.current, headlineRef.current],
+            };
+        }
+    }, [animationController]);
 
     return (
-        <header className="grid lg:grid-cols-4 grid-cols-2 grid-rows-2 lg:grid-rows-1 gap-2 lg:p-8 p-6 relative z-1 w-full h-full lg:h-fit">
+        <header className="grid lg:grid-cols-4 grid-cols-2 grid-rows-2 lg:grid-rows-1 gap-2 lg:p-8 p-6 relative z-3 w-full h-full lg:h-fit">
             <div className="grid-item w-fit h-fit">
                 <p ref={logoRef} className="lg:text-xl text-lg">Visionary</p>
             </div>

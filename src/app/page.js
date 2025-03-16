@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import SectionRowImg from './components/SectionRowImg';
+import SectionRow from './components/SectionRow';
 import CustomCursor from "./components/CustomCursor";
 import Header from './components/Header';
 
@@ -11,7 +11,7 @@ export default function Home() {
             <CustomCursor/>
             <main className="h-full w-full relative overflow-hidden">
                 <Header/>
-                <SectionRowImg/>
+                <SectionRow/>
             </main>
         </>
     );

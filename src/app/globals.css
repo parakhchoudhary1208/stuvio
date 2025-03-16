@@ -30,7 +30,18 @@ html,body {
     cursor: none;
 }
 
-.clip-path-hidden {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    will-change: clip-path;
+/* .grid-item-section-duplicate:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.562);
 }
+
+.grid-item-section-duplicate:nth-child(2) {
+    background-color: rgba(128, 255, 0, 0.562);
+}
+
+.grid-item-section-duplicate:nth-child(3) {
+    background-color: rgba(0, 21, 255, 0.562);
+}
+
+.grid-item-section-duplicate:nth-child(4) {
+    background-color: rgba(255, 247, 0, 0.562);
+} */
