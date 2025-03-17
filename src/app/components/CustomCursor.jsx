@@ -20,7 +20,7 @@ const CustomCursor = () => {
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 w-6 h-6 z-3"
+            className="fixed top-0 left-0 w-6 h-6 z-3 lg:block hidden"
         >
             <p className="text-black text-[80px]">*</p>
         </div>

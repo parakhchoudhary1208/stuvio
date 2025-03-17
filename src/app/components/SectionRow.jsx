@@ -15,6 +15,7 @@ const SectionRow = () => {
     const sectionRefs = useRef([]);
     const duplicateRefs = useRef([]);
     const overlayRefs = useRef([]);
+    const contentSliderRef = useRef([]);
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     // Create the animation controller
@@ -25,6 +26,7 @@ const SectionRow = () => {
         duplicateRefs,
         titleRefs,
         overlayRefs,
+        contentSliderRef,
         expandedIndex,
         setExpandedIndex
     );
@@ -76,6 +78,7 @@ const SectionRow = () => {
                         sectionRef={(el) => (sectionRefs.current[index] = el)}
                         imageRef={(el) => (imageRefs.current[index] = el)}
                         overlayRefs={(el) => (overlayRefs.current[index] = el)}
+                        contentSliderRef={(el) => (contentSliderRef.current[index] = el)}
                         titleRef1={(el) => (titleRefs.current[index * 2] = el)}
                         titleRef2={(el) => (titleRefs.current[index * 2 + 1] = el)}
                     />
@@ -91,7 +94,10 @@ const SectionRow = () => {
                         duplicateRef={(el) => (duplicateRefs.current[index] = el)}
                         onMouseEnter={() => animationController.handleHover(index, true)}
                         onMouseLeave={() => animationController.handleHover(index, false)}
-                        onClick={() => animationController.handleExpand(index)}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            animationController.handleExpand(index);
+                        }}
                     />
                 ))}
             </section>

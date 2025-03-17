@@ -16,11 +16,14 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@gsap/react": "^2.1.2",
+    "@heroicons/react": "^2.2.0",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "gsap": "^3.12.7",
     "motion": "^12.5.0",
+    "react-icons": "^5.5.0",
+    "remixicon": "^4.6.0",
     "tailwindcss": "^4"
   }
 }

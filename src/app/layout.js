@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import 'remixicon/fonts/remixicon.css';
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",

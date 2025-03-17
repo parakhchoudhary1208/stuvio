@@ -8,6 +8,7 @@ const createAnimationController = (
     duplicateRefs,
     titleRefs,
     overlayRefs,
+    contentSliderRef,
     expandedIndex,
     setExpandedIndex,
 ) => {
@@ -45,9 +46,33 @@ const createAnimationController = (
             const rect = section.getBoundingClientRect();
             const isCollapsing = expandedIndex === index;
 
+            const expansionEvent = new CustomEvent('sectionExpansionChange', {
+                detail: { 
+                    expandedIndex: isCollapsing ? null : index 
+                }
+            });
+            window.dispatchEvent(expansionEvent);
+
             if (isCollapsing) {
                 // Collapse animation
-                gsap.to([section, duplicate], {
+                let collapse_tl = gsap.timeline()
+                contentSliderRef.current.forEach((content, i) => {
+                    if(i === index) {
+                        collapse_tl.to(content, { 
+                            right: "-100%", 
+                            duration: 0.25, 
+                            ease: "power2.inOut",
+                            onComplete: () => {
+                                gsap.set(content, {
+                                    right: 0,
+                                    opacity: 0,
+                                })
+                            },
+                        });
+                    }
+                });
+                
+                collapse_tl.to([section, duplicate], {
                     x: 0,
                     y: 0, // Reset position to original grid placement
                     width: isMobile ? "50vw" : "25vw",
@@ -72,7 +97,7 @@ const createAnimationController = (
 
                 // Reset overlay opacity for all sections
                 overlayRefs.current.forEach((overlay) => {
-                    gsap.to(overlay, { opacity: 0, duration: 0.5, ease: "power2.inOut" });
+                    gsap.to(overlay, { backgroundColor: "transparent", duration: 0.5, ease: "power2.inOut" });
                 });
 
                 // Reset title positions
@@ -85,14 +110,26 @@ const createAnimationController = (
             } else {
                 // Expand animation
                 setExpandedIndex(index);
+                let expand_tl = gsap.timeline();
                 const yOffset = isMobile ? -rect.top : 0;
-                gsap.to([section, duplicate], {
+
+                expand_tl.to([section, duplicate], {
                     x: -rect.left,
-                    y: yOffset,
+                    y: isMobile ? yOffset : 0,
                     width: viewportWidth,
                     height: viewportHeight,
-                    duration: 0.75,
+                    duration: 0.5,
                     ease: "power2.inOut",
+                }, 'a');
+
+                contentSliderRef.current.forEach((content, i) => {
+                    if(i === index) {
+                        expand_tl.to(content, { 
+                            opacity: 1, 
+                            duration: 0.1, 
+                            ease: "power2.inOut",
+                        }, "b");
+                    }
                 });
 
                 // Hide other sections
@@ -127,9 +164,9 @@ const createAnimationController = (
                 // Modify overlays based on expanded/collapsed state
                 overlayRefs.current.forEach((overlay, i) => {
                     if (i !== index) {
-                        gsap.to(overlay, { opacity: 0, duration: 0.5, ease: "power2.inOut" }); // Hide others
+                        gsap.to(overlay, { backgroundColor: "transparent", duration: 0.5, ease: "power2.inOut" });
                     } else {
-                        gsap.to(overlay, { opacity: 0.3, duration: 0.5, ease: "power2.inOut" }); // Keep it 0.6 for active
+                        gsap.to(overlay, { backgroundColor: "rgba(0, 0, 0, 0.6)", duration: 0.5, ease: "power2.inOut" });
                     }
                 });
             }
