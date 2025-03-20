@@ -143,7 +143,7 @@ const createAnimationController = (
                         }, {
                             scale: 1, 
                             rotate: 360,
-                            duration: 1.25,
+                            duration: 0.75,
                             ease: "power2.inOut",
                         },"b");
                     }
