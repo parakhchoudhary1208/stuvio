@@ -12,6 +12,9 @@ const Section = ({
     titleRef1, 
     titleRef2,
     overlayRefs,
+    circleRef,
+    descriptionRef,
+    scrollRef,
     contentSliderRef,
 }) => (
     <div
@@ -24,7 +27,7 @@ const Section = ({
             src={item.src} 
             title={item.title} 
         />
-        <SectionOverlay description={item.description} src={item.src} title={item.title} overlayRefs={overlayRefs} contentSliderRef={contentSliderRef}/>
+        <SectionOverlay description={item.description} src={item.src} title={item.title} overlayRefs={overlayRefs} circleRef={circleRef} descriptionRef={descriptionRef} scrollRef={scrollRef} contentSliderRef={contentSliderRef}/>
         <SectionTitle 
             titleRef1={titleRef1} 
             titleRef2={titleRef2} 

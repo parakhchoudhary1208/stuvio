@@ -8,6 +8,9 @@ const createAnimationController = (
     duplicateRefs,
     titleRefs,
     overlayRefs,
+    circleRef,
+    descriptionRefs,
+    scrollRefs,
     contentSliderRef,
     expandedIndex,
     setExpandedIndex,
@@ -131,6 +134,43 @@ const createAnimationController = (
                         }, "b");
                     }
                 });
+
+                circleRef.current.forEach((circle, i) => {
+                    if(i === index && circle) {
+                        expand_tl.fromTo(circle, { 
+                            scale: 0, 
+                            rotate: 180,
+                        }, {
+                            scale: 1, 
+                            rotate: 360,
+                            duration: 1.25,
+                            ease: "power2.inOut",
+                        },"b");
+                    }
+                });
+
+                descriptionRefs.current.forEach((desc, i) => {
+                    if(i === index && desc) {
+                        expand_tl.from( desc,{
+                            opacity: 0,
+                            y: 20,
+                            duration: 1,
+                            ease: "power2.out",
+                        },"c" );
+                    }
+                });
+
+                scrollRefs.current.forEach((scroll, i) => {
+                    if(i === index && scroll) {
+                        expand_tl.from( scroll,{
+                            opacity: 0,
+                            y: 20,
+                            duration: 0.1,
+                            ease: "power2.out",
+                        },"c" );
+                    }
+                });
+                
 
                 // Hide other sections
                 sectionRefs.current.forEach((sec, i) => {

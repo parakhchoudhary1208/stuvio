@@ -105,7 +105,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 "ue client";
 ;
 ;
-const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description })=>{
+const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description, circleRef, descriptionRef, scrollRef })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: overlayRefs,
         className: "relative overlay h-full w-full bg-transparent",
@@ -114,6 +114,7 @@ const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description
             className: "flex lg:flex-col justify-between gap-10 items-start absolute lg:right-0 lg:bottom-0 right-[0%] bottom-[60%] translate-x-[0%] h-fit lg:h-[65vh] lg:w-[50%] w-full opacity-0 p-4 lg:p-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: circleRef,
                     className: "h-fit w-fit relative lg:ml-[30%] origin-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -127,19 +128,19 @@ const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description
                                 className: "h-full w-full"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                            lineNumber: 11,
+                            lineNumber: 12,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                             className: "flex items-center justify-center ri-arrow-right-down-line lg:text-4xl text-xl font-extralight absolute right-[-5px] top-[70%] lg:h-[48px] h-[36px] lg:w-[48px] w-[36px] rounded-full bg-[#ffffffd1]"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, this)
                     ]
@@ -152,14 +153,16 @@ const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description
                     className: "flex items-end justify-between",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            ref: descriptionRef,
                             className: "lg:w-[50%] text-white",
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            ref: scrollRef,
                             className: "lg:flex hidden gap-1 justify-center items-center text-white",
                             children: [
                                 "Scroll Down to Explore More",
@@ -167,19 +170,19 @@ const SectionOverlay = ({ overlayRefs, contentSliderRef, src, title, description
                                     className: "ri-arrow-right-down-line text-4xl font-extralight"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                                    lineNumber: 25,
+                                    lineNumber: 26,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                            lineNumber: 23,
+                            lineNumber: 24,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/Layout/SectionOverlay.jsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 17
                 }, this)
             ]
@@ -215,7 +218,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 ;
-const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, overlayRefs, contentSliderRef })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, overlayRefs, circleRef, descriptionRef, scrollRef, contentSliderRef })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: sectionRef,
         className: "relative h-[100%] w-[100%] lg:w-[25vw] lg:h-full lg:border-b-transparent lg:border-b-[0px] border-b border-b-gray-300 border-r  border-r-gray-300 last:border-r-0 grid-item-section",
         children: [
@@ -225,7 +228,7 @@ const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, over
                 title: item.title
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Layout/Section.jsx",
-                lineNumber: 22,
+                lineNumber: 25,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Layout$2f$SectionOverlay$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -233,10 +236,13 @@ const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, over
                 src: item.src,
                 title: item.title,
                 overlayRefs: overlayRefs,
+                circleRef: circleRef,
+                descriptionRef: descriptionRef,
+                scrollRef: scrollRef,
                 contentSliderRef: contentSliderRef
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Layout/Section.jsx",
-                lineNumber: 27,
+                lineNumber: 30,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Layout$2f$SectionTitle$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -245,13 +251,13 @@ const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, over
                 title: item.title
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Layout/Section.jsx",
-                lineNumber: 28,
+                lineNumber: 31,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/Layout/Section.jsx",
-        lineNumber: 17,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 const __TURBOPACK__default__export__ = Section;
@@ -293,7 +299,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-ssr] (ecmascript) <locals>");
 "use client";
 ;
-const createAnimationController = (imageRefs, timerRefs, sectionRefs, duplicateRefs, titleRefs, overlayRefs, contentSliderRef, expandedIndex, setExpandedIndex)=>{
+const createAnimationController = (imageRefs, timerRefs, sectionRefs, duplicateRefs, titleRefs, overlayRefs, circleRef, descriptionRefs, scrollRefs, contentSliderRef, expandedIndex, setExpandedIndex)=>{
     return {
         handleHover: (index, show)=>{
             clearTimeout(timerRefs.current[index]);
@@ -419,6 +425,39 @@ const createAnimationController = (imageRefs, timerRefs, sectionRefs, duplicateR
                         }, "b");
                     }
                 });
+                circleRef.current.forEach((circle, i)=>{
+                    if (i === index && circle) {
+                        expand_tl.fromTo(circle, {
+                            scale: 0,
+                            rotate: 180
+                        }, {
+                            scale: 1,
+                            rotate: 360,
+                            duration: 1.25,
+                            ease: "power2.inOut"
+                        }, "b");
+                    }
+                });
+                descriptionRefs.current.forEach((desc, i)=>{
+                    if (i === index && desc) {
+                        expand_tl.from(desc, {
+                            opacity: 0,
+                            y: 20,
+                            duration: 1,
+                            ease: "power2.out"
+                        }, "c");
+                    }
+                });
+                scrollRefs.current.forEach((scroll, i)=>{
+                    if (i === index && scroll) {
+                        expand_tl.from(scroll, {
+                            opacity: 0,
+                            y: 20,
+                            duration: 0.1,
+                            ease: "power2.out"
+                        }, "c");
+                    }
+                });
                 // Hide other sections
                 sectionRefs.current.forEach((sec, i)=>{
                     if (i !== index) {
@@ -537,10 +576,13 @@ const SectionRow = ()=>{
     const sectionRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const duplicateRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const overlayRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
+    const circleRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
+    const descriptionRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
+    const scrollRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const contentSliderRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     const [expandedIndex, setExpandedIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     // Create the animation controller
-    const animationController = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$controller$2f$AnimationController$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(imageRefs, timerRefs, sectionRefs, duplicateRefs, titleRefs, overlayRefs, contentSliderRef, expandedIndex, setExpandedIndex);
+    const animationController = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$controller$2f$AnimationController$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(imageRefs, timerRefs, sectionRefs, duplicateRefs, titleRefs, overlayRefs, circleRefs, descriptionRefs, scrollRefs, contentSliderRef, expandedIndex, setExpandedIndex);
     // Cleanup timers when component unmounts
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$gsap$2f$react$2f$src$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useGSAP"])(()=>{
         return ()=>timerRefs.current.forEach(clearTimeout);
@@ -584,17 +626,20 @@ const SectionRow = ()=>{
                         sectionRef: (el)=>sectionRefs.current[index] = el,
                         imageRef: (el)=>imageRefs.current[index] = el,
                         overlayRefs: (el)=>overlayRefs.current[index] = el,
+                        circleRef: (el)=>circleRefs.current[index] = el,
+                        descriptionRef: (el)=>descriptionRefs.current[index] = el,
+                        scrollRef: (el)=>scrollRefs.current[index] = el,
                         contentSliderRef: (el)=>contentSliderRef.current[index] = el,
                         titleRef1: (el)=>titleRefs.current[index * 2] = el,
                         titleRef2: (el)=>titleRefs.current[index * 2 + 1] = el
                     }, `section-${index}`, false, {
                         fileName: "[project]/src/app/components/SectionRow.jsx",
-                        lineNumber: 74,
+                        lineNumber: 80,
                         columnNumber: 21
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/SectionRow.jsx",
-                lineNumber: 69,
+                lineNumber: 75,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -610,12 +655,12 @@ const SectionRow = ()=>{
                         }
                     }, `overlay-${index}`, false, {
                         fileName: "[project]/src/app/components/SectionRow.jsx",
-                        lineNumber: 91,
+                        lineNumber: 100,
                         columnNumber: 21
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/SectionRow.jsx",
-                lineNumber: 89,
+                lineNumber: 98,
                 columnNumber: 13
             }, this)
         ]

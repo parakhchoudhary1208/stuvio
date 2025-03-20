@@ -15,6 +15,9 @@ const SectionRow = () => {
     const sectionRefs = useRef([]);
     const duplicateRefs = useRef([]);
     const overlayRefs = useRef([]);
+    const circleRefs = useRef([]);
+    const descriptionRefs = useRef([]);
+    const scrollRefs = useRef([]);
     const contentSliderRef = useRef([]);
     const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -26,6 +29,9 @@ const SectionRow = () => {
         duplicateRefs,
         titleRefs,
         overlayRefs,
+        circleRefs,
+        descriptionRefs,
+        scrollRefs,
         contentSliderRef,
         expandedIndex,
         setExpandedIndex
@@ -78,6 +84,9 @@ const SectionRow = () => {
                         sectionRef={(el) => (sectionRefs.current[index] = el)}
                         imageRef={(el) => (imageRefs.current[index] = el)}
                         overlayRefs={(el) => (overlayRefs.current[index] = el)}
+                        circleRef={(el) => (circleRefs.current[index] = el)}
+                        descriptionRef={(el) => (descriptionRefs.current[index] = el)}
+                        scrollRef={(el) => (scrollRefs.current[index] = el)}
                         contentSliderRef={(el) => (contentSliderRef.current[index] = el)}
                         titleRef1={(el) => (titleRefs.current[index * 2] = el)}
                         titleRef2={(el) => (titleRefs.current[index * 2 + 1] = el)}
