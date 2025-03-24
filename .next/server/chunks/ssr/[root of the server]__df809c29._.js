@@ -220,7 +220,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 const Section = ({ index, item, sectionRef, imageRef, titleRef1, titleRef2, overlayRefs, circleRef, descriptionRef, scrollRef, contentSliderRef })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: sectionRef,
-        className: "relative h-[100%] w-[100%] lg:w-[25vw] lg:h-full lg:border-b-transparent lg:border-b-[0px] border-b border-b-gray-300 border-r  border-r-gray-300 last:border-r-0 grid-item-section",
+        className: "relative h-[50vh] w-[50vw] lg:w-[25vw] lg:h-full lg:border-b-transparent lg:border-b-[0px] border-b border-b-gray-300 border-r  border-r-gray-300 last:border-r-0 grid-item-section",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Layout$2f$SectionImage$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 imageRef: imageRef,
@@ -900,11 +900,11 @@ const Header = ()=>{
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid-item-2 col-span-2 w-[90%] lg:pl-6 pl-0 lg:mt-0 mt-[30%]",
+                className: "grid-item-2 col-span-2 w-[90%] lg:pl-6 pl-0 lg:mt-0 mt-[10%]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         ref: headlineRef,
-                        className: "lg:text-[48px] text-[18px] uppercase font-light",
+                        className: "lg:text-[48px] text-[14px] uppercase font-light",
                         children: [
                             "elevating comfort ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -921,8 +921,9 @@ const Header = ()=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         ref: buttonRef,
-                        className: "border border-black uppercase lg:px-4 lg:py-1.5 px-3 py-1 rounded-full mt-6 bg-transparent overflow-hidden lg:text-[16px] text-[14px]",
+                        className: "border border-black uppercase lg:px-4 lg:py-1.5 px-3 py-1 rounded-full mt-6 bg-transparent overflow-hidden lg:ml-0 ml-[-8px]",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "lg:text-[16px] text-[12px]",
                             children: "Explore Experience"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Header.jsx",

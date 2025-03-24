@@ -19,7 +19,7 @@ const Section = ({
 }) => (
     <div
         ref={sectionRef}
-        className="relative h-[100%] w-[100%] lg:w-[25vw] lg:h-full lg:border-b-transparent lg:border-b-[0px] border-b border-b-gray-300 border-r  border-r-gray-300
+        className="relative h-[50vh] w-[50vw] lg:w-[25vw] lg:h-full lg:border-b-transparent lg:border-b-[0px] border-b border-b-gray-300 border-r  border-r-gray-300
         last:border-r-0 grid-item-section"
     >
         <SectionImage 

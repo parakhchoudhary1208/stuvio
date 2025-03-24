@@ -153,12 +153,12 @@ const Header = () => {
             <div>
                 <p ref={taglineRef} className="grid-item lg:text-xl text-lg pl-4">Where Form <br/> and Function Unite</p>
             </div>
-            <div className="grid-item-2 col-span-2 w-[90%] lg:pl-6 pl-0 lg:mt-0 mt-[30%]">
-                <h1 ref={headlineRef} className="lg:text-[48px] text-[18px] uppercase font-light">
+            <div className="grid-item-2 col-span-2 w-[90%] lg:pl-6 pl-0 lg:mt-0 mt-[10%]">
+                <h1 ref={headlineRef} className="lg:text-[48px] text-[14px] uppercase font-light">
                     elevating comfort <br/> with every curve
                 </h1>
-                <button ref={buttonRef} className="border border-black uppercase lg:px-4 lg:py-1.5 px-3 py-1 rounded-full mt-6 bg-transparent overflow-hidden lg:text-[16px] text-[14px]">
-                    <p>Explore Experience</p>
+                <button ref={buttonRef} className="border border-black uppercase lg:px-4 lg:py-1.5 px-3 py-1 rounded-full mt-6 bg-transparent overflow-hidden lg:ml-0 ml-[-8px]">
+                    <p className="lg:text-[16px] text-[12px]">Explore Experience</p>
                 </button>
             </div>
         </header>

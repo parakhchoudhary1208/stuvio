@@ -77,7 +77,7 @@ const createAnimationController = (
                 
                 collapse_tl.to([section, duplicate], {
                     x: 0,
-                    y: 0, // Reset position to original grid placement
+                    y: 0,
                     width: isMobile ? "50vw" : "25vw",
                     height: isMobile ? "50vh" : "100vh",
                     duration: 0.75,
