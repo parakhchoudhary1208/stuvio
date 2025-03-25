@@ -12,8 +12,7 @@ const SectionImage = ({ imageRef, src, title }) => (
             src={src}
             alt={title}
             fill
-            style={{ objectFit: "none" }}
-            className="h-full w-auto"
+            className="h-full w-auto lg:object-none object-cover"
         />
     </div>
 );

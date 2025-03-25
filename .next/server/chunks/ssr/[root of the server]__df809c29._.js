@@ -34,10 +34,7 @@ const SectionImage = ({ imageRef, src, title })=>/*#__PURE__*/ (0, __TURBOPACK__
             src: src,
             alt: title,
             fill: true,
-            style: {
-                objectFit: "none"
-            },
-            className: "h-full w-auto"
+            className: "h-full w-auto lg:object-none object-cover"
         }, void 0, false, {
             fileName: "[project]/src/app/components/Layout/SectionImage.jsx",
             lineNumber: 11,
